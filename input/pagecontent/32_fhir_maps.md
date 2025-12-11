@@ -47,7 +47,6 @@ The mapping in table form
 | formatCode            | content.format                | content.profile.valueCoding       |
 | referenceIdList *type |                               |                                   |
 | ... encounterId       | context.encounter             | context                           |
-| ... procedures        | context.related               | basedOn                           |
 | ... accession         | context.related               | basedOn                           |
 | ... referral          | context.related               | basedOn                           |
 | ... order             | context.related               | basedOn                           |

@@ -16,7 +16,7 @@ TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE
 The Source Code System urn:ietf:rfc:3986 is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 
 # some examples are underpopulated, the full population is not important for the use-case being explained
-WARNING: Bundle/ex-comprehensiveProvideDocumentBundleDocument: Bundle.entry[2].resource.entry[0].resource/*Composition/180f219f-97a8-486d-99d9-ed631fe4fc57*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Bundle/ex-comprehensiveProvideDocumentBundleDocument: Bundle.entry[2].resource.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
 
 
@@ -35,7 +35,7 @@ All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod
 All_observations_should_have_a_performer
 
 # The fdoc example fhir document is just a sample.
-Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 # These are profiles imported from BALP, and thus no examples are relevant here.
 WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.BasicAudit.MHD5.Create'): The Implementation Guide contains no examples for this profile
