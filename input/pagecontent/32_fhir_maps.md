@@ -51,9 +51,9 @@ The mapping in table form
 | ... referral          | context.related               | basedOn                           |
 | ... order             | context.related               | basedOn                           |
 | ... studyInstanceUID  | context.related               | basedOn                           |
-| ... uniqueId          | context.related               | extension ([referenceId](StructureDefinition-ihe-ReferenceId.html))                  |
-| ... workflowInstanceId | context.related               | extension ([referenceId](StructureDefinition-ihe-ReferenceId.html))                   |
-| ... all other         | context.related               | extension ([referenceId](StructureDefinition-ihe-ReferenceId.html))                   |
+| ... uniqueId          | context.related               | extension ([referenceId](StructureDefinition-ihe-referenceId.html))                  |
+| ... workflowInstanceId | context.related               | extension ([referenceId](StructureDefinition-ihe-referenceId.html))                   |
+| ... all other         | context.related               | extension ([referenceId](StructureDefinition-ihe-referenceId.html))                   |
 | eventCodeList         | context.event                 | event.concept                     |
 | serviceStartTime      | context.period.start          | period.start                      |
 | serviceStopTime       | context.period.end            | period.end                        |
@@ -63,7 +63,7 @@ The mapping in table form
 | sourcePatientId       | sourcePatientInfo.identifier  | extension ([sourcePatient](https://hl7.org/fhir/extensions/StructureDefinition-documentreference-sourcepatient.html))         |
 {: .grid}
 
-Note: referenceIdList *type: as encoded in CXi format, is an indication of the type of identifier, see [IHE ITI Volume 3 Table 4.2.3.1.7.2: Data Types](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.1.7). Based on that type (CXi.5), the mapping is specific. Where no specific mapping is available the extension for [IHE-ReferenceId](StructureDefinition-ihe-ReferenceId.html) is used.
+Note: referenceIdList *type: as encoded in CXi format, is an indication of the type of identifier, see [IHE ITI Volume 3 Table 4.2.3.1.7.2: Data Types](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.1.7). Based on that type (CXi.5), the mapping is specific. Where no specific mapping is available the extension for [IHE-ReferenceId](StructureDefinition-ihe-referenceId.html) is used.
 
 Note: FHIR contains an informative mapping that is intended to be equivalent and can be found at [FHIR documentReference XDS mapping]({{site.data.fhir.path}}documentreference-mappings.html#xds). For the purposes of IHE MHD conformance the mapping documented here (in IHE) are normative.
 
