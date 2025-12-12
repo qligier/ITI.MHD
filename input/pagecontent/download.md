@@ -7,6 +7,8 @@ You can download:
 
 The source code for this Implementation Guide can be found on [IHE ITI.MHD Github Repo](https://github.com/IHE/ITI.MHD).
 
+This is FHIR R5 IG. Package for MHD requires specifying the MHD Version 5.x.x for FHIR R5 [ihe.iti.mhd](package.tgz).
+
 #### Cross Version Analysis
 
 {% include cross-version-analysis.xhtml %}
