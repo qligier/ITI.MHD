@@ -35,10 +35,11 @@ Resources are not required to carry the meta.profile element and may only carry 
 
 The hash of document is encoded differently in the DocumentReference resource and in the DocumentEntry metadata.
 While the DocumentEntry contains the hexadecimal representation of the hash digest, the DocumentReference resource contains the base64-encoding of the hash digest.
-For example:
+Example values for of a zero length file:
 
-- `DocumentEntry.hash` value: `e8e3172143001587cb7508446aa092eb51995809`
-- `DocumentReference.attachment.hash` value: `6OMXIUMAFYfLdQhEaqCS61GZWAk=`
+- HexBinary Encoded: `DocumentEntry.hash` value: `da39a3ee5e6b4b0d3255bfef95601890afd80709`
+- Base64 Encoded: `DocumentReference.attachment.hash` value: `2jmj7l5rSw0yVb/vlWAYkK/YBwk=`
+
 
 ### 3:4.5.2 SubmissionSet Metadata Attributes {#submissionSet}
 
